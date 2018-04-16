@@ -7,3 +7,13 @@ def fibo(n):
         return 1
     else:
         return fibo(n - 1) + fibo(n - 2)
+
+fibcache = {0:1, 1:1}
+def fibonacci(n):
+    """ executes fibonacci sum wit the help of a fibcache"""
+
+    if n in fibcache:
+        return fibcache[n]
+    else:
+        fibcache[n] = fibo(n)
+        return fibcache[n]
