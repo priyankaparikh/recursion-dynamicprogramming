@@ -9,6 +9,7 @@ def fibo(n):
         return fibo(n - 1) + fibo(n - 2)
 
 fibcache = {0:1, 1:1}
+
 def fibonacci(n):
     """ executes fibonacci sum wit the help of a fibcache"""
 
